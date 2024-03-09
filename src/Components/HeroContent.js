@@ -1,7 +1,13 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 
 function HeroContent() {
+
+    const handleClick = () => {
+        return (console.log("asd"))
+    }
+
     return (
         <div>
             <div className="hero-content">
@@ -11,9 +17,11 @@ function HeroContent() {
                     Feel free to contact me.
                     </p>
                 </div>
-                <img className="hero-img" src="images/11-removebg-preview.png" alt="a"/>
+                <Link style={{ paddingTop: "2.5rem" , pointerEvents: "none"}} to="/EEProjects">
+                <button className="hero-button" onClick={handleClick}>See my work.</button>
+                </Link>
             </div>
-        </div>
+            </div>
     );
 }
 

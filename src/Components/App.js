@@ -1,9 +1,9 @@
-import './Styles/App.css';
-import HomePage from './Pages/HomePage';
-import ContactPage from './Pages/ContactPage';
-import EEProjectsPage from "./Pages/EEProjectsPage";
+import '../Styles/App.css';
+import HomePage from '../Pages/HomePage';
+import ContactPage from '../Pages/ContactPage';
+import EEProjectsPage from "../Pages/EEProjectsPage";
 import {Routes, Route} from "react-router-dom"
-import Header from "./Components/Header";
+import Header from "./Header";
 
 function App() {
   return (

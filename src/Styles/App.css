@@ -1,23 +1,23 @@
 :root{
     font-size: 16px;
+    --tiger: #010100;
+    --light-black : #0C1618;
     --bg-blue: #212A3E;
-    --primary: #394867;
-    --secondary: #9BA4B5;
-    --light: #F1F6F9;
+    --wine: #5B2333;
+    --light-blue: #394867;
     --orange-color: #e08a11;
     --dark-yellow : #8A6E2D;
-    --text-color: #f6e8d0;
-    --tiger: #010100;
-    --rb : #0C1618;
     --coral: #FF8552;
     --myrtle-green: #297373;
+    --gray: #9BA4B5;
+    --light: #F1F6F9;
+    --yellow-white: #f6e8d0;
     --platinum: #E6E6E6;
-    --wine: #5B2333;
 }
 
 
 .App{
-    background-color: var(--light);
+    background-color: white;
     height: 100vh;
     width: 100vw;
 }
@@ -27,6 +27,7 @@
     justify-content: space-between;
     color: var(--bg-blue);
     padding: 0 2rem;
+    height: 6rem;
 }
 
 .logoHolder{
@@ -36,32 +37,39 @@
 
 
 .header-content{
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .header-link{
+    width: max-content;
+    height: 3rem;
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--bg-blue);
 }
 
-.header-link:after{
+.header-link:after{  /* create line below do not show it */
     content: "";
     display: block;
     width: 0;
     height: 2px;
-    background: #ffffff;
+    background: var(--bg-blue);
     transition: .3s;
 }
 
-.header-link:hover:after{
+.header-link:hover:after{  /* line is shown */
     width: 100%;
+    background-image: linear-gradient(to right, var(--bg-blue) , var(--orange-color));
 }
 
 .header-link:hover{
-    background-image: linear-gradient(to right, var(--light) , var(--dark-yellow));
+    background-image: linear-gradient(to right, var(--bg-blue) , var(--orange-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -71,7 +79,7 @@
     margin-left: 18%;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 12rem;
 }
 
 .hero-text{
@@ -87,6 +95,31 @@
 .hero-img{
     width: 22rem;
 }
+
+.hero-button{
+    background-color: var(--bg-blue);
+    color: var(--platinum);
+    width: 15rem;
+    height: 7.5rem;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 1.5rem;
+    transition: 1s;
+    font-size: 0.9rem;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    pointer-events: all;
+}
+
+.hero-button:hover{
+    background-color: var(--myrtle-green);
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
 
 .contact-page-content-styles{
     font-size: 24px;

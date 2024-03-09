@@ -27,12 +27,12 @@ function EEProjectsPage() {
 
             <div className="EEProjects-card">
                 <img className="EEProjects-image" src={currentProject.coverImg} alt="projectCover"/>
-                <div className="EEProjects-card-text">
-                <h2>{currentProject.title}</h2>
-                <p>{currentProject.description}</p>
-                <p>{currentProject.githubLink}</p>
-                </div>
-                <div className="buttons">
+                    <div className="EEProjects-card-text">
+                        <h2>{currentProject.title}</h2>
+                        <p>{currentProject.description}</p>
+                        <p>{currentProject.githubLink}</p>
+                    </div>
+                <div className="EEProjects-buttons">
                     <button className="n-button" onClick={handlePrevProjectClick}>Previous Project</button>
                     <button className="p-button" onClick={handleNextProjectClick}>Next Project</button>
                 </div>
