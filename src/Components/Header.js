@@ -10,9 +10,9 @@ function Header() {
             <div>
                <ul className="header-content">
                    <Link to="/" className="header-link">Home</Link>
-                   <Link to="/" className="header-link">EE Projects</Link>
-                   <Link to="/" className="header-link">Web Projects</Link>
-                   <Link to="/" className="header-link">Interests</Link>
+                   <Link to="/EEProjects" className="header-link">EE Projects</Link>
+                   <Link to="/webProjects" className="header-link">Web Projects</Link>
+                   <Link to="/interests" className="header-link">Interests</Link>
                    <Link to="/contact" className="header-link">Contact</Link>
                </ul>
             </div>
@@ -25,7 +25,7 @@ function Header() {
     <li>Projects</li>
     <li>Interests</li>
     <li>Socials</li>
-    <li>Contact</li>
+    <li>ContactPage</li>
 </ul>
 */
 export default Header;

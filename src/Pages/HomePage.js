@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroContent from "../Components/HeroContent";
 
-function Home() {
+function HomePage() {
     return (
         <div>
             <HeroContent/>
@@ -9,4 +9,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomePage;

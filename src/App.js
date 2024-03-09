@@ -1,6 +1,7 @@
-import './App.css';
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
+import './Styles/App.css';
+import HomePage from './Pages/HomePage';
+import ContactPage from './Pages/ContactPage';
+import EEProjectsPage from "./Pages/EEProjectsPage";
 import {Routes, Route} from "react-router-dom"
 import Header from "./Components/Header";
 
@@ -10,8 +11,9 @@ function App() {
         <Header/>
 
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/EEProjects" element={<EEProjectsPage/>}></Route>
         </Routes>
 
     </div>

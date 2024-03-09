@@ -1,18 +1,23 @@
 :root{
+    font-size: 16px;
     --bg-blue: #212A3E;
     --primary: #394867;
     --secondary: #9BA4B5;
     --light: #F1F6F9;
-    --color: #e08a11;
+    --orange-color: #e08a11;
     --dark-yellow : #8A6E2D;
     --text-color: #f6e8d0;
-    font-size: 16px;
     --tiger: #010100;
+    --rb : #0C1618;
+    --coral: #FF8552;
+    --myrtle-green: #297373;
+    --platinum: #E6E6E6;
+    --wine: #5B2333;
 }
 
 
 .App{
-    background-color: var(--bg-blue);
+    background-color: var(--light);
     height: 100vh;
     width: 100vw;
 }
@@ -20,7 +25,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    color: var(--light);
+    color: var(--bg-blue);
     padding: 0 2rem;
 }
 
@@ -39,7 +44,7 @@
 .header-link{
     font-size: 1.2rem;
     text-decoration: none;
-    color: var(--light);
+    color: var(--bg-blue);
 }
 
 .header-link:after{
@@ -70,7 +75,7 @@
 }
 
 .hero-text{
-    color: var(--text-color);
+    color: var(--tiger);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,4 +86,11 @@
 
 .hero-img{
     width: 22rem;
+}
+
+.contact-page-content-styles{
+    font-size: 24px;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    color: var(--tiger);
 }

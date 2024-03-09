@@ -1,0 +1,24 @@
+.EEProjects-page-content{
+    color: white;
+    height: 50rem;
+    max-height: calc(100vh - 86px);
+}
+
+.EEProjects-card{
+    padding-top: 5rem;
+    height: 30rem;
+}
+
+.EEProjects-image{
+    height: 20rem;
+    width: 35rem;
+    margin-left: calc((100vw - 35rem) / 2);
+    margin-right: calc((100vw - 35rem) / 2);
+}
+
+.EEProjects-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
